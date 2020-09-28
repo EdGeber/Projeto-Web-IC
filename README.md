@@ -1,1 +1,1 @@
-# Código do site do Projeto Web da disciplina de Introdução à Computação, semestre 2020.3
+# Código do site para o Projeto Web da disciplina de Introdução à Computação, semestre 2020.3
