@@ -1,0 +1,115 @@
+/* Este .css contém as estilizações comuns a todas as páginas. Basicamente as estilizações do menu superior,
+do background, das cores de certos tipos de elementos, do alinhamento dos parágrafos e das margens do
+texto principal. */
+
+* {
+    font-family: 'Piazzolla', serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+body {
+    font-size: 1rem;
+    background-color: #90e0ef;
+    flex-direction: column;
+}
+
+.top-menu, .top-lef.menu, .top-right-menu {
+    justify-content: center;
+}
+
+.top-menu {
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    position: fixed;
+    flex-direction: row;
+    font-size: 1rem;
+}
+
+.top-menu .menu-item {
+    margin: 0 2.1em;
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: black;
+}
+
+.top-left-menu {
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-right-menu {
+    align-items: center;
+}
+
+.top-right-menu h3 {
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 2rem;   /* a área de contato na qual o dropdown surge é aumentada */
+    padding-top: 0.4rem;
+    padding-bottom: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.3);
+    overflow: auto;
+    padding: 0.8rem;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#trabs:hover, #plus:hover {cursor: default;}
+
+.dropdown-item {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.trabalhos {
+    width: 15rem;
+    left: -4.5rem;  /* para centralizar o dropdown abaixo do item "Trabalhos" */
+}
+
+main {
+    margin-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p {
+    text-align: justify;
+}
+
+.heading {
+    color: #50260f
+}
+
+.heading.início {
+    text-align: center;
+}

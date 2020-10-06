@@ -1,0 +1,72 @@
+/* Estilizações de index.html */
+
+/* Note que muitas divs aqui estilizadas não recebem display flex porque elas também fazem parte
+da classe container, para a qual o display flex já foi definido em standard.css */
+
+.column {flex-direction: column;}
+
+.meu-perfil {
+    width: 100%;
+    justify-content: center;
+}
+
+.intro img {
+    border-radius: 50%;
+    border: 0.25rem solid;
+    border-color: rgba(255, 255, 255, 0.61) #50260f;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.3);
+}
+
+.animais {
+    width: 100%;
+    flex-direction: wrap;
+}
+
+.animais img{
+    border-style: hidden;
+    margin: 0.625rem;   /* =10px para uma fonte de 16px */  
+}
+
+.animais .mindy, .nina, .jinx {
+    border-radius: 1.5625rem;   /* =25px para uma fonte de 16px */
+}
+
+.musicas {position: relative;}
+
+.musicas h2, ul {z-index: 2;}
+
+#chico {
+    scale: 0.8;
+    position: absolute;
+    top: 1rem;
+    right: -5rem;
+    text-align: center;
+}
+
+#chico img {
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.musicas a {text-decoration: none;}
+
+ul.nacionais {color: green;}
+
+ul.classicas {color: orangered;}
+
+ul.lofi {color: darkblue;}
+
+#cin {
+    margin: 3rem 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cin img {
+    z-index: 1;
+    max-width: 40%;
+    height: auto;
+}
